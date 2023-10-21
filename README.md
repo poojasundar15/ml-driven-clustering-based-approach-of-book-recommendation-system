@@ -1,4 +1,4 @@
-# Book Recommender
+# A cluster based approach Book Recommendation System using Machine Learning
 
 ## Exploratory Data Analysis + Data Visualization + Modelling 
 
