@@ -1,4 +1,4 @@
-# A clustering based approach Book Recommendation System using Machine Learning
+# A Clustering based approach Book Recommendation System using Machine Learning
 
 ## Exploratory Data Analysis + Data Visualization + Modelling 
 
