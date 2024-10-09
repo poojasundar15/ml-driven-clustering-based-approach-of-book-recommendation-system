@@ -1,10 +1,10 @@
-# ML-DRIVEN: A Clustering Based Approach of Book Recommendation System
+# ML-DRIVEN: A Clustering-Based Approach of Book Recommendation System
 
 ## Exploratory Data Analysis + Data Visualization + Modelling 
 
 ### 1 - Abstract
 
-In this project I made Exploratory Data Analysis, Data Visualisation and lastly Modelling. Dataset contains 11123 rows in csv file. Each example row represent a book with 12 different information. Before modelling part I have to check NaN values and make some small adjustment for easy to use of the dataset and merge couple of languages on 1 language(en-AUS,en-UK to eng). Later I made couple of visualization to understand the dataset better. In modelling part, I used unsupervised learning algorithm K-means which is grouping unlabelled data. For deciding number of cluster I used Elbow method and decided to do 5 clusters. Finally, I test my model with several books and add input function for searching easily. 
+In this project, I made Exploratory Data Analysis, Data Visualisation, and lastly Modelling. The dataset contains 11123 rows in a CSV file. Each example row represents a book with 12 different pieces of information. Before the modeling part I have to check NaN values make some small adjustments for easy use of the dataset and merge a couple of languages into 1 language(en-AUS,en-UK to eng). Later I made a couple of visualizations to understand the dataset better. In the modeling part, I used the unsupervised learning algorithm K-means which groups unlabelled data. For deciding the number of clusters I used the Elbow method and decided to do 5 clusters. Finally, I tested my model with several books and added an input function for searching easily. 
 
 ### 2 - Data
 <a href="https://www.kaggle.com/jealousleopard/goodreadsbooks">Dataset</a> contains 12 columns and 11123 rows.
@@ -26,7 +26,7 @@ Columns Description:
 
 ### 3 - Exploratory Data Analysis
 
-In EDA I visualize language distribution, Top 20 authors with number of books, Top 20 highest rated books, and Average rating distribution for all books. 
+In EDA I visualize language distribution, the Top 20 authors with the number of books, the Top 20 highest-rated books, and the Average rating distribution for all books. 
 
 
 <p align="center">
@@ -45,7 +45,7 @@ In EDA I visualize language distribution, Top 20 authors with number of books, T
   <img width="800" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/Average%20rating.png">
 </p>
 
-Secondly, I create list for my favorite authors and visualize their books according to average rating of books. 
+Secondly, I create a list of my favorite authors and visualize their books according to the average rating of books. 
 ```
 authors = ['Gabriel García Márquez', 'Jack London', 'George Orwell', 'Jules Verne', 'Richard P. Feynman']
 ```
@@ -69,7 +69,7 @@ authors = ['Gabriel García Márquez', 'Jack London', 'George Orwell', 'Jules Ve
   <img width="900" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/RichardFeynman.png">
 </p>
 
-After all these steps, I wanted to investigate the relationship of columns. As you can see below, __Average Rating and Number of Pages, Average Rating and Reviews Counts,Rating Counts and Average Ratings__
+After all these steps, I wanted to investigate the relationship between columns. As you can see below, __Average Rating and Number of Pages, Average Rating and Reviews Counts,Rating Counts and Average Ratings__
 
 <p align="center">
   <img width="500" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/averagerating_numpages.png">
@@ -84,19 +84,19 @@ After all these steps, I wanted to investigate the relationship of columns. As y
 </p>
 
 ### 4 - Modelling 
-In the modelling part, I already decide to use K-Means Algorithm but I have to decide how many should I use. For deciding this I used Elbow Method which is giving very good assumption. In the figure below you can see the graph.
+In the modeling part, I already decided to use the K-Means Algorithm but I have to decide how many should I use. For deciding this I used the Elbow Method which gives giving very good assumption. In the figure below you can see the graph.
 
 <p align="center">
   <img width="800" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/elbow.png">
 </p>
 
-After deciding 5 clusters, I created plotting and expressing clusters.
+After deciding on 5 clusters, I created plotting and expressing clusters.
 
 <p align="center">
   <img width="800" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/cluster1.png">
 </p>
 
-Lastly I implemented Min-max scaler, for reducing bias. Because some books has massive amount of features and some of them very few. So, Min-Max scaler will find the median all books. 
+Lastly, I implemented a Min-max scaler, to reduce bias. Because some books have a massive amount of features and some of them very few. So, the Min-Max scaler will find the median of all books. 
 
 
 ### 5 - Result & Future Work
@@ -118,4 +118,4 @@ print_similar_books("Lord of the Flies")
 * The Hour Before Dark
 * A Philosophical Enquiry into the Origin of our Ideas of the Sublime and Beautiful
 
-As a result, my book recommender gives good results. But still there are more rooms to improvement. Such as, finding category of each books makes everything more effective. Or increasing size of data or information(more rows) can help more accurate recommendations.
+As a result, my book recommender gives good results. But still, there is more room for improvement. Such as finding the category of each book makes everything more effective. Increasing the size of data or information(more rows) can help more accurate recommendations.
