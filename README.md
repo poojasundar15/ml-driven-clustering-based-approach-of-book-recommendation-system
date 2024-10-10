@@ -4,7 +4,7 @@
 
 ### 1 - Abstract
 
-In this project, I made Exploratory Data Analysis, Data Visualisation, and lastly Modelling. The dataset contains 11123 rows in a CSV file. Each example row represents a book with 12 different pieces of information. Before the modeling part I have to check NaN values make some small adjustments for easy use of the dataset and merge a couple of languages into 1 language(en-AUS,en-UK to eng). Later I made a couple of visualizations to understand the dataset better. In the modeling part, I used the unsupervised learning algorithm K-means which groups unlabelled data. For deciding the number of clusters I used the Elbow method and decided to do 5 clusters. Finally, I tested my model with several books and added an input function for searching easily. 
+In this project, I conducted exploratory data analysis, data visualization, and modeling. The dataset contains 11123 rows in a CSV file. Each example row represents a book with 12 different pieces of information. Before modeling, I have to check NaN values, make some small adjustments for easy use of the dataset, and merge a couple of languages into 1 language(en-AUS,en-UK to eng). Later I made a couple of visualizations to understand the dataset better. In the modeling part, I used the unsupervised learning algorithm K-means which groups unlabelled data. For deciding the number of clusters I used the Elbow method and decided to do 5 clusters. Finally, I tested my model with several books and added an input function for searching easily. 
 
 ### 2 - Data
 <a href="https://www.kaggle.com/jealousleopard/goodreadsbooks">Dataset</a> contains 12 columns and 11123 rows.
@@ -69,7 +69,7 @@ authors = ['Gabriel García Márquez', 'Jack London', 'George Orwell', 'Jules Ve
   <img width="900" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/RichardFeynman.png">
 </p>
 
-After all these steps, I wanted to investigate the relationship between columns. As you can see below, __Average Rating and Number of Pages, Average Rating and Reviews Counts,Rating Counts and Average Ratings__
+After all these steps, I wanted to investigate the relationship between columns. As you can see below, __Average Rating and Number of Pages, Average Rating and Reviews Counts, Rating Counts and Average Ratings__
 
 <p align="center">
   <img width="500" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/averagerating_numpages.png">
