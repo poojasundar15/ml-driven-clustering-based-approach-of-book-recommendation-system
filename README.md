@@ -1,10 +1,10 @@
-# ML-DRIVEN: A Clustering-Based Approach of Book Recommendation System
+# ML-DRIVEN: A Clustering-Based Approach to Book Recommendation Systems
 
 ## Exploratory Data Analysis + Data Visualization + Modelling 
 
 ### 1 - Abstract
 
-In this project, I conducted exploratory data analysis, data visualization, and modeling. The dataset contains 11123 rows in a CSV file. Each example row represents a book with 12 different pieces of information. Before modeling, I have to check NaN values, make some small adjustments for easy use of the dataset, and merge a couple of languages into 1 language(en-AUS,en-UK to eng). Later I made a couple of visualizations to understand the dataset better. In the modeling part, I used the unsupervised learning algorithm K-means which groups unlabelled data. For deciding the number of clusters I used the Elbow method and decided to do 5 clusters. Finally, I tested my model with several books and added an input function for searching easily. 
+I conducted exploratory data analysis, data visualization, and modeling in this project. The dataset contains 11123 rows in a CSV file. Each example row represents a book with 12 different pieces of information. Before modeling, I have to check for NaN values, make some small adjustments for easy use of the dataset, and merge a couple of languages into 1 language(en-AUS,en-UK to eng). Later, I made a couple of visualizations to understand the dataset better. In the modeling part, I used the unsupervised learning algorithm K-means, which groups unlabelled data. I used the Elbow method to decide the number of clusters and do 5 clusters. Finally, I tested my model with several books and added an input function for searching easily. 
 
 ### 2 - Data
 <a href="https://www.kaggle.com/jealousleopard/goodreadsbooks">Dataset</a> contains 12 columns and 11123 rows.
@@ -14,7 +14,7 @@ Columns Description:
 * __title__ = contains the titles of the books
 * __authors__ = contains the author of the particular book
 * __average_rating__ = the average rating of the books, as decided by the users
-* __ISBN ISBN(10)__ = number, tells the information about a book - such as edition and publisher
+* __ISBN(10)__ = number, tells the information about a book, such as edition and publisher
 * __ISBN 13__ = the new format for ISBN, implemented in 2007. 13 digits
 * __language_code__ = tells the language for the books
 * __Num_pages__ = contains the number of pages for the book
@@ -26,7 +26,7 @@ Columns Description:
 
 ### 3 - Exploratory Data Analysis
 
-In EDA I visualize language distribution, the Top 20 authors with the number of books, the Top 20 highest-rated books, and the Average rating distribution for all books. 
+In EDA, I visualize language distribution, the Top 20 authors with the number of books, the Top 20 highest-rated books, and the Average rating distribution for all books. 
 
 
 <p align="center">
@@ -84,19 +84,19 @@ After all these steps, I wanted to investigate the relationship between columns.
 </p>
 
 ### 4 - Modelling 
-In the modeling part, I already decided to use the K-Means Algorithm but I have to decide how many should I use. For deciding this I used the Elbow Method which gives giving very good assumption. In the figure below you can see the graph.
+In the modeling part, I already decided to use the K-Means Algorithm but I have to decide how many should I use. For deciding this I used the Elbow Method which gives giving very good assumption. In the figure below, you can see the graph.
 
 <p align="center">
   <img width="800" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/elbow.png">
 </p>
 
-After deciding on 5 clusters, I created plotting and expressing clusters.
+After deciding on 5 clusters, I created a plot and expressed the clusters.
 
 <p align="center">
   <img width="800" height="500" src="https://github.com/HalukSumen/Book_Recommender/blob/main/images/cluster1.png">
 </p>
 
-Lastly, I implemented a Min-max scaler, to reduce bias. Because some books have a massive amount of features and some of them very few. So, the Min-Max scaler will find the median of all books. 
+Lastly, I implemented a Min-max scaler to reduce bias. Because some books have a massive amount of features, and some of themhave  very few. So, the Min-Max scaler will find the median of all books. 
 
 
 ### 5 - Result & Future Work
@@ -118,4 +118,4 @@ print_similar_books("Lord of the Flies")
 * The Hour Before Dark
 * A Philosophical Enquiry into the Origin of our Ideas of the Sublime and Beautiful
 
-As a result, my book recommender gives good results. But still, there is more room for improvement. Such as finding the category of each book makes everything more effective. Increasing the size of data or information(more rows) can help more accurate recommendations.
+As a result, my book recommender gives good results. But still, there is more room for improvement. Such as finding the category of each book makes everything more effective. Increasing the size of data or information(more rows) can help make recommendations more accurate.
